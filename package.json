@@ -1,0 +1,21 @@
+{
+    "name": "eval-api-mysql",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+      "dev": "node src/server.js",
+      "db:dev": "prisma migrate dev --name init",
+      "db:deploy": "prisma migrate deploy",
+      "db:seed": "node prisma/seed.js"
+    },
+    "dependencies": {
+      "@prisma/client": "^5.17.0",
+      "cors": "^2.8.5",
+      "dotenv": "^16.4.5",
+      "express": "^4.19.2"
+    },
+    "devDependencies": {
+      "prisma": "^5.17.0"
+    }
+  }
+  
