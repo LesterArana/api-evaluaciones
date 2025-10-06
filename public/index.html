@@ -118,7 +118,7 @@
   
 
   <script>
-    const API = 'http://localhost:3000/api';
+    const API = '/api';
     const $ = (id) => document.getElementById(id);
     const showMsg = (el, text, ok=true) => { el.style.display='block'; el.className='msg ' + (ok?'ok':'err'); el.textContent=text; };
     const hideMsg = (el) => { el.style.display='none'; el.textContent=''; };
